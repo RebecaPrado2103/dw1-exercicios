@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete</title>
+    <link rel = "stylesheet" href = "lanchonete.css">
+</head>
+<body>
+    <header>
+        Lanchonete
+    </header>
+
+    <main>
+        <section>
+            <table border="1">
+                <tr>
+                    <th>Lanches</th>
+                    <th>R$</th>
+                    <th>Unidade</th>
+                </tr>
+
+                <tr>
+                    <td>Cachorro quente básico</td>
+                    <td>22,00</td>
+                    <td><input type="number" id="inputCQB"></td>
+                </tr>
+
+                <tr>
+                    <td>Cachorro quente duplo</td>
+                    <td>26,00</td>
+                    <td><input type="number" id="inputCQD"></td>
+                </tr>
+
+                <tr>
+                    <td>X-salada</td>
+                    <td>29,00</td>
+                    <td><input type="number" id="inputXS"></td>
+                </tr>
+
+                <tr>
+                    <td>Refrigerente 350mL</td>
+                    <td>5,00</td>
+                    <td><input type="number" id="inputRefri"></td>
+                </tr>
+
+                <tr>
+                    <td>Refrigerante 1L</td>
+                    <td>8,00</td>
+                    <td><input type="number" id="inputR"></td>
+                </tr>
+            </table>
+
+            <button onclick="funcaoCalcular()">Calcular Preco</button>
+            <br><br>
+
+            <div class="resposta">
+                <p><strong>Preço:</strong><span id="resposta"></span></p>
+            </div>
+            </section>
+    </main>
+
+    <footer id="footer">
+        <span id="mensagem">Preencha os espaços e calcule</span>
+    </footer>
+
+    <script src="lanchonete.js"></script>
+</body>
+</html>

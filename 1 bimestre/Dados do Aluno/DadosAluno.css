@@ -2,8 +2,8 @@
     --azul-claro: #97e6fe;
     --azul: hsl(208, 94%, 69%);
     --vermelho-escuro: hsl(244, 100%, 59%);
-    --branco: #ffffff;
-    --cinza: #ddebf1;
+    --branco: #e5eef7;
+    --cinza: #fefefe;
     --preto: #000000;
 }
 
@@ -11,7 +11,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #beecfb;
+    background-image: url(School.jpeg);
 }
 
 /* HEADER */
@@ -37,7 +37,7 @@ section {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    width: 500px;
 }
 
 /* TÍTULO */

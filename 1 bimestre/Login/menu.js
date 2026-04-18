@@ -1,9 +1,23 @@
-function CalcularTotal(){
+function calcular(){
     let x = parseInt(document.getElementById("inputConsumo").value);
+
     let resp = "";
+    
+    let footer = document.getElementById("footer");
+    let mensagem = document.getElementById("mensagem");
+
     if(x<0){
-        alert("Não é possível utilizar números negativos");
-    }else if(x<=5){
+        footer.classList.add("erro");
+        mensagem.innerHTML = "Não é possível utilizar números negativos";
+        document.getElementById("resultado").innerHTML = "-";
+        return;
+    }else{
+        footer.classList.remove("erro");
+        mensagem.innerHTML = "Cálculo realizado com sucesso";
+    }
+    
+    
+    if(x<=5){
         resp = 94.19;
     }else if(x<=10){
         resp = 94.19 + (x-5)*2.91;

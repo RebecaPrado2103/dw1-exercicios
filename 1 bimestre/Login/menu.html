@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <header>
+        Bem-vindo ao site para calcular sua conta de água!
+    </header>
+
+    <main>
+        <section>
+
+            <h1>Conta de água</h1>
+
+            <p>Coloque o valor do consumo e descubra o valor a pagar (água e esgoto).</p>
+            <label for="inputConsumo">Consumo</label>
+            <input type="number" id="inputConsumo">
+            <br><br>
+
+            <button onclick="calcular()">Calcular</button>
+
+            <br><br>
+
+            <div class="resultado">
+                <p><strong>Valor a ser pago:</strong> <span id="resultado">0</span></p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <span id="mensagem">Preencha o espaço e calcule</span>
+    </footer>
+
+
+  <!-- Script externo -->
+  <script src="menu.js"></script>
+
+</body>
+</html>

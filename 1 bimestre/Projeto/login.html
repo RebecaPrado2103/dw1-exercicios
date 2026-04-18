@@ -6,20 +6,32 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    
-    <div class="container">
-    <div class="card">
-      <h2>Login</h2>
 
-      <input type="text" id="usuario" placeholder="Usuário">
-      <input type="password" id="senha" placeholder="Senha">
+    <header>
+        Faça o login para entar no site 
+    </header>
 
-      <button id="btnLogin">Entrar</button>
+    <main>
+        <section>
 
-      <!-- Footer de mensagem -->
-      <footer id="mensagem"></footer>
-    </div>
-  </div>
+            <h1>Login</h1>
+
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" placeholder="Usuário">
+            <br>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Senha">
+
+            <button onclick="Entrar()">Entrar</button>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <span id="mensagem">Preencha os espaços para entrar</span>
+    </footer>
+
 
   <!-- Importa o JS externo -->
   <script src="login.js"></script>

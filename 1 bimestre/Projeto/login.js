@@ -1,16 +1,19 @@
-document.getElementById("btnLogin").addEventListener("click", function () {
-    const usuario = document.getElementById("usuario").value;
-    const senha = document.getElementById("senha").value;
-    const mensagem = document.getElementById("mensagem");
+function Entrar(){
+    let usuario = document.getElementById("usuario").value;
+    let senha = document.getAnimations("senha").value;
 
     const usuarioCorreto = "admin";
     const senhaCorreta = "1234";
 
-    if (usuario === usuarioCorreto && senha === senhaCorreta) {
-        mensagem.textContent = ""; // limpa mensagem
-        window.open("menu.html", "_blank");
+    let footer = document.getElementById("footer");
+    let mensagem = document.getElementById("mensagem");
+
+    if (usuario !== usuarioCorreto && senha !== senhaCorreta) {
+        footer.classList.add("erro");
+        mensagem.innerHTML = "Usuário ou senha incorretos";
     } else {
-        mensagem.textContent = "Usuário ou senha incorretos!";
-        mensagem.style.color = "red";
+        footer.classList.remove("erro");
+        mensagem.innerHTML = "Login realizado com sucesso";
+        window.open("menu.html", "_blank");
     }
-});
+}

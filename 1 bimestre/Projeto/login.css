@@ -1,80 +1,109 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+:root {
+    --azul-claro: #97e6fe;
+    --azul: hsl(208, 94%, 69%);
+    --vermelho-escuro: hsl(244, 100%, 59%);
+    --branco: #e5eef7;
+    --cinza: #fefefe;
+    --preto: #000000;
 }
 
-/* Fundo da página */
 body {
-  height: 100vh;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c8edf8;
 }
 
-/* Container central */
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* HEADER */
+header {
+    background-color: var(--azul-claro);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
 }
 
-/* Card */
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  text-align: center;
-  width: 300px;
+/* CENTRALIZA TUDO */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
 
-/* Títulos */
-.card h1,
-.card h2 {
-  margin-bottom: 20px;
-  color: #333;
+/* CAIXA */
+section {
+    background: var(--cinza);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 500px;
 }
 
-/* Inputs */
-.card input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  transition: 0.3s;
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: var(--azul);
 }
 
-.card input:focus {
-  border-color: #4facfe;
+/* LABEL */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-/* Botão */
-.card button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 15px;
-  border: none;
-  border-radius: 6px;
-  background: #4facfe;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+/* INPUTS (todos os tipos) */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #7af2f8;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
 }
 
-.card button:hover {
-  background: #3a8dde;
+/* FOCO */
+input:focus {
+    background-color: var(--azul-claro);
+    border-color: var(--azul-claro);
 }
 
+/* BOTÃO */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3810c8;
+}
+
+/* FOOTER */
 footer {
-  margin-top: 15px;
-  font-size: 14px;
-  min-height: 20px; /* evita pular layout */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-claro);
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ERRO */
+footer.erro {
+    background-color: var(--vermelho-escuro);
+    color: white;
 }

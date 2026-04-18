@@ -1,8 +1,8 @@
 body {
   font-family: Arial;
   text-align: center;
-  background: rgb(124, 194, 232);
-  color: #00ffcc;
+  background: rgb(146, 206, 239);
+  color: #02715b;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
 }
 
 .time {
-  background: #0e7ff1;
+  background: #478fd8;
   padding: 20px;
   border-radius: 10px;
   width: 200px;

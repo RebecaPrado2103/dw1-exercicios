@@ -11,8 +11,27 @@
     <div class="card">
       <h1>Bem-vindo!</h1>
       <p>Você fez login com sucesso 🎉</p>
+
+      <hr style="margin:20px 0;">
+
+      <!-- SEU CÓDIGO (HTML mantido) -->
+      <div>
+        <h1>Conta de água</h1>
+        <p>Coloque o valor do consumo e descubra o valor a pagar (água e esgoto).</p>
+        <label for="inputConsumo">Consumo</label>
+        <input type="number" id="inputConsumo">
+        <br><br>
+        <input type="button" value="Calcular" onclick="CalcularTotal()">
+        <br><br>
+        <label for="resultado">Resultado: </label>
+        <span id="resultado">…</span>
+      </div>
+
     </div>
   </div>
+
+  <!-- Script externo -->
+  <script src="menu.js"></script>
 
 </body>
 </html>

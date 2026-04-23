@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+.linha {
+    display: flex;
+    flex: 1;
+}
+
+.linha1 .coluna{
+    flex: 1;
+}
+.linha2 .coluna {
+    flex: 1;
+}
+
+/* LINHA 3 */
+.linha3 .coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Só a coluna da esquerda da linha 3 NÃO é flex */
+.linha3 .coluna:nth-child(1) {
+    display: block;
+}
+
+/* LINHA 4 */
+.linha4 .coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.linha4 .coluna:nth-child(1) {
+    display: flex;
+}
+
+/* Subcolunas */
+.linha3 .coluna .subcoluna{
+    flex: 1;
+    height: 100%;
+}
+.linha4 .coluna .subcoluna {
+    flex: 1;
+    height: 100%;
+}
+
+/* Cores */
+.linha1 .coluna:nth-child(1) {
+    background: crimson;
+    flex-direction: column;
+}
+
+.linha1 .coluna:nth-child(2) {
+    background: darkorange;
+}
+
+.linha1 .coluna:nth-child(3) {
+    background: gold;
+}
+
+.linha1 .coluna:nth-child(4) {
+    background: limegreen;
+}
+
+.linha1 .coluna:nth-child(5) {
+    background: turquoise;
+}
+
+.linha2 .coluna:nth-child(1) {
+    background: navy;
+}
+
+.linha2 .coluna:nth-child(2) {
+    background: mediumslateblue;
+}
+
+.linha3 .coluna:nth-child(1) {
+    background: palevioletred;
+}
+
+.linha3 .coluna:nth-child(2) .subcoluna:nth-child(1) {
+    background: #444;
+}
+
+.linha3 .coluna:nth-child(2) .subcoluna:nth-child(2) {
+    background: #666;
+}
+
+.linha3 .coluna:nth-child(2) .subcoluna:nth-child(3) {
+    background: #888;
+}
+
+.linha4 .coluna:nth-child(1) .subcoluna:nth-child(1) {
+    background: #baf55d;
+}
+
+.linha4 .coluna:nth-child(1) .subcoluna:nth-child(2) {
+    background: #83fe10;
+}
+
+.linha4 .coluna:nth-child(2) {
+    background: rgb(235, 98, 213);
+}
+
+/* Centralização */
+.coluna,
+.subcoluna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid white;
+}

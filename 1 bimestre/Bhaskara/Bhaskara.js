@@ -13,13 +13,13 @@ function calcular(){
         X2 = "-";
     }else{
         footer.classList.remove("erro");
-        mensagem.innerHTML = "Os espaços precisam ser preenchidos";
+        mensagem.innerHTML = "Calculo realizado com sucesso!";
     }
 
     let d = b**2-4*a*c;
             
-    let X1 = (-b+(d**(1/2)))/2;
-    let X2 = (-b-(d**(1/2)))/2;
+    let X1 = (-b+(d**(1/2)))/(2*a);
+    let X2 = (-b-(d**(1/2)))/(2*a);
 
     if(isNaN(X1) || isNaN(X2)){
         X1 = "O delta não possui raiz quadrada. ∆ = " + d;
